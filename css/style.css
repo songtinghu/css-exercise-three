@@ -50,7 +50,7 @@ table {
 
 /* begins here */
 
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -63,51 +63,57 @@ body {
 }
 
 .container {
-  background-color: #D3D3D3;
-  border: 10% solid #808080;
   margin: 50px;
   width: 420px;
-}
-
-.location {
-  border-bottom: solid 0.5px #808080;
-}
-
-.location:hover {background-color: #A9A9A9}
-
-
-.arrow {
-  float:right;
-  margin:10px;
-}
-
-
-h1 {
-  background-color: #D3D3D3;
-  font-size: 1em;
-  font-weight:700;
-  margin: 8px;
-  text-align: left;
-}
-
-h3 {
-  background-color: #D3D3D3;
-  font-size: 0.8em;
-  font-weight: 500;
-  margin: 8px;
-  text-align: left;
 }
 
 
 nav {
   margin: 0 auto;
   padding: 15px;
-  background-color: #000000;
   position: fixed;
   width: 420px;
+	background-color: black;
+}
+
+.arrow-left {
+	padding-top: 5px;
 }
 
 .restaurant-list {
   padding-top: 50px;
-  width: 100%
+	background-color: #dadada;
+}
+
+
+.location {
+  padding: 20px;
+	background-color: #dadada;
+	height: 70px;
+	clear: both;
+	border-bottom: 1px solid black;
+}
+
+.location:hover {
+	background-color: darkgrey;
+}
+
+.content {
+	float: left;
+	width: 90%;
+}
+
+h1 {
+	font-size: 1.8em;
+	font-weight: 900;
+}
+
+h3 {
+	font-size: 1.2em;
+	margin-top: 5px;
+}
+
+.arrow {
+  float:right;
+	width: 10%;
 }
